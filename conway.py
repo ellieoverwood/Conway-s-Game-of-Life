@@ -11,7 +11,7 @@ directory = os.path.dirname(os.path.realpath(__file__))
 recentlySaved = True
 
 f = open(directory+"/default_var.txt","r")
-lang, defLang = f.read(), f.read()
+lang, defLang = f.read().replace("\n",""), f.read().replace("\n","")
 f.close()
 
 f = open(directory+"/default_width.txt","r")
